@@ -1,9 +1,15 @@
 class ProxyProtectedFile extends File {
+    private File file = null;
+
+    public ProxyProtectedFile () {
+        this.file = new PublicFile();
+    }
+
     public String read() {
         if (isProtected)
             return "File is protected";
         else
-            return "Read protected File";
+            return this.file.read();
     }
 
     public void setProtection(boolean isProtected) {
