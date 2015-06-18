@@ -1,3 +1,3 @@
 abstract class State {
-    public abstract State request();
+    public abstract void request(Context context);
 }

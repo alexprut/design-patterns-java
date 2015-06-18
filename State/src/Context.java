@@ -6,10 +6,14 @@ class Context {
     }
 
     public void request() {
-        state = state.request();
+        state.request(this);
+    }
+
+    public void setState(State state) {
+        this.state = state;
     }
 
     public String toString() {
         return "Context with: " + state.toString();
-    };
+    }
 }

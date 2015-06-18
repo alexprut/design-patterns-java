@@ -1,6 +1,6 @@
 class CloseState extends State {
-    public State request() {
-        return new OpenState();
+    public void request(Context context) {
+        context.setState(new OpenState());
     }
 
     public String toString() {
