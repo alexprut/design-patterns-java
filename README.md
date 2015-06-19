@@ -34,3 +34,4 @@ Design Patterns Implemented
 * Memento
 * Iterator
 * Visitor
+* Chain of Responsability
