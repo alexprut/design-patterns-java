@@ -9,7 +9,8 @@ for the Object Oriented Analysis and Design class._
 Design Patterns Implemented
 ---------------------------
 #### Structural
-* Adapter
+* Class Adapter
+* Object Adapter
 * Facade
 * Composite
 * Decorator
@@ -28,3 +29,8 @@ Design Patterns Implemented
 * Strategy
 * State
 * Command
+* Observer
+* Mediator
+* Memento
+* Iterator
+* Visitor
