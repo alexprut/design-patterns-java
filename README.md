@@ -22,7 +22,7 @@ Design Patterns Implemented
 * Abstract Factory
 * Prototype
 * Singleton
-* Builder (TODO)
+* Builder
 
 #### Behavioral
 * Template Method
