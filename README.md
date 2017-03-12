@@ -1,5 +1,5 @@
-Design Patterns
----------------
+Design Patterns in Java
+-----------------------
 Classic OOP Design Patterns from [GoF](https://en.wikipedia.org/?title=Design_Patterns),
 implemented in Java.
 
@@ -35,3 +35,7 @@ Design Patterns Implemented
 * Iterator
 * Visitor
 * Chain of Responsability
+
+License
+=======
+Licensed under [MIT](https://github.com/alexprut/design-patterns-java/blob/master/LICENSE).
