@@ -1,4 +1,4 @@
-package design_patterns.behavioral.flyweight;
+package design_patterns.structural.flyweight;
 
 class Order {
     public final int tableNumber;

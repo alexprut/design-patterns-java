@@ -1,4 +1,4 @@
-package design_patterns.behavioral.proxy;
+package design_patterns.structural.proxy;
 
 class ProxyProtectedFile extends File {
     private File file = null;

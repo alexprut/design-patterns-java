@@ -1,4 +1,4 @@
-package design_patterns.behavioral.decorator;
+package design_patterns.structural.decorator;
 
 class Milk extends CoffeeDecorator {
     public Milk(Coffee decorator) {

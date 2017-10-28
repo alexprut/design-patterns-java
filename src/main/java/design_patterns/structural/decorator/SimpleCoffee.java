@@ -1,4 +1,4 @@
-package design_patterns.behavioral.decorator;
+package design_patterns.structural.decorator;
 
 class SimpleCoffee extends Coffee {
     public double getCost() {

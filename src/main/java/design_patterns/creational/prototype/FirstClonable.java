@@ -1,4 +1,4 @@
-package design_patterns.behavioral.prototype;
+package design_patterns.creational.prototype;
 
 class FirstClonable extends Prototype {
     protected Prototype clone() {

@@ -1,4 +1,4 @@
-package design_patterns.behavioral.bridge;
+package design_patterns.structural.bridge;
 
 class Line extends Shape {
     public Line(DrawProgram drawProgram) {

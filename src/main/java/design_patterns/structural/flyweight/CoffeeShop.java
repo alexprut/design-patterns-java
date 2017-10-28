@@ -1,4 +1,4 @@
-package design_patterns.behavioral.flyweight;
+package design_patterns.structural.flyweight;
 
 import java.util.ArrayList;
 import java.util.ListIterator;

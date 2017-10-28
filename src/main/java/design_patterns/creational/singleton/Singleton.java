@@ -1,4 +1,4 @@
-package design_patterns.behavioral.singleton;
+package design_patterns.creational.singleton;
 
 class Singleton {
     private static Singleton instance;

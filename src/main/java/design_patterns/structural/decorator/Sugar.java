@@ -1,4 +1,4 @@
-package design_patterns.behavioral.decorator;
+package design_patterns.structural.decorator;
 
 class Sugar extends CoffeeDecorator {
     public Sugar(Coffee decorator) {

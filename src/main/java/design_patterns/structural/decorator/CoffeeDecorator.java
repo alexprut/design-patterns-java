@@ -1,4 +1,4 @@
-package design_patterns.behavioral.decorator;
+package design_patterns.structural.decorator;
 
 abstract class CoffeeDecorator extends Coffee {
     private final Coffee decorator;

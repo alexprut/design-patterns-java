@@ -1,4 +1,4 @@
-package design_patterns.behavioral.composite;
+package design_patterns.structural.composite;
 
 import java.util.ArrayList;
 import java.util.ListIterator;

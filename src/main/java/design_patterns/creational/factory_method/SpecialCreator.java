@@ -1,4 +1,4 @@
-package design_patterns.behavioral.factory_method;
+package design_patterns.creational.factory_method;
 
 class SpecialCreator extends Creator {
     public Product factoryMethod() {

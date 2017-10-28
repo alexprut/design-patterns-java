@@ -1,4 +1,4 @@
-package design_patterns.behavioral.bridge;
+package design_patterns.structural.bridge;
 
 class DrawProgram2 extends DrawProgram {
     public String drawCircle() {

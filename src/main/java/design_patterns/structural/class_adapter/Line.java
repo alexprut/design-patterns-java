@@ -1,4 +1,4 @@
-package design_patterns.behavioral.class_adapter;
+package design_patterns.structural.class_adapter;
 
 class Line implements Figure {
     public void draw() {

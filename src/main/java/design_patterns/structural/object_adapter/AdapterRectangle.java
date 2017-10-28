@@ -1,4 +1,4 @@
-package design_patterns.behavioral.object_adapter;
+package design_patterns.structural.object_adapter;
 
 class AdapterRectangle implements Figure {
     private Rectangle rectangle = new Rectangle();
