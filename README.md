@@ -1,10 +1,11 @@
-Design Patterns in Java
------------------------
-Classic OOP Design Patterns from [GoF](https://en.wikipedia.org/?title=Design_Patterns),
-implemented in Java.
+<div align="center">
+<img src="https://github.com/alexprut/design-patterns-java/raw/staging/logo.png" height="300" height="auto"/>
+<h1>Design Patterns in Java</h1>
 
-_Code written for practice. During my Master's degree in Computer Science at University of Udine,
-for the Object Oriented Analysis and Design class._
+[![MIT](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/alexprut/design-patterns-java/blob/master/LICENSE)
+<p>Classic OOP Design Patterns from <a href="https://en.wikipedia.org/?title=Design_Patterns">GoF</a>, implemented in Java.</p>
+</div>
+<br />
 
 Design Patterns Implemented
 ---------------------------
