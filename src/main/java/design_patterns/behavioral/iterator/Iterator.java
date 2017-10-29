@@ -1,15 +1,16 @@
 package design_patterns.behavioral.iterator;
 
 abstract class Iterator {
-    abstract String current();
 
-    abstract boolean hasNext();
+  abstract String current();
 
-    abstract String first();
+  abstract boolean hasNext();
 
-    abstract String last();
+  abstract String first();
 
-    abstract String next();
+  abstract String last();
 
-    abstract String previous();
+  abstract String next();
+
+  abstract String previous();
 }

@@ -1,19 +1,21 @@
 package design_patterns.creational.singleton;
 
 class Singleton {
-    private static Singleton instance;
 
-    private Singleton() {}
+  private static Singleton instance;
 
-    public static synchronized Singleton getInstance() {
-        if (instance == null) {
-            Singleton.instance = new Singleton();
-        }
+  private Singleton() {
+  }
 
-        return instance;
+  public static synchronized Singleton getInstance() {
+    if (instance == null) {
+      Singleton.instance = new Singleton();
     }
 
-    protected String doSomething() {
-        return "I do something";
-    }
+    return instance;
+  }
+
+  protected String doSomething() {
+    return "I do something";
+  }
 }

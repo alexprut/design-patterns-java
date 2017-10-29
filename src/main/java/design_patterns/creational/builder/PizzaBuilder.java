@@ -3,36 +3,37 @@ package design_patterns.creational.builder;
 import java.util.ArrayList;
 
 public class PizzaBuilder {
-    protected ArrayList<String> ingredients;
-    protected String name;
-    protected int price;
-    protected Pizza pizza;
 
-    public Pizza getPizza() {
-        return new Pizza(this);
-    }
+  protected ArrayList<String> ingredients;
+  protected String name;
+  protected int price;
+  protected Pizza pizza;
 
-    public void setIngredients(ArrayList<String> ingredients) {
-        this.ingredients = ingredients;
-    }
+  public Pizza getPizza() {
+    return new Pizza(this);
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setIngredients(ArrayList<String> ingredients) {
+    this.ingredients = ingredients;
+  }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public ArrayList<String> getIngredients() {
-        return this.ingredients;
-    }
+  public void setPrice(int price) {
+    this.price = price;
+  }
 
-    public String getName() {
-        return this.name;
-    }
+  public ArrayList<String> getIngredients() {
+    return this.ingredients;
+  }
 
-    public int getPrice() {
-        return this.price;
-    }
+  public String getName() {
+    return this.name;
+  }
+
+  public int getPrice() {
+    return this.price;
+  }
 }

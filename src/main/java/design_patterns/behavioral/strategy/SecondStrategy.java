@@ -2,19 +2,19 @@ package design_patterns.behavioral.strategy;
 
 class SecondStrategy extends Strategy {
 
-    public String algorithm() {
-        return doSomething() + " then " + doSomethingElse() + " and " + doSomethingDifferent();
-    }
+  public String algorithm() {
+    return doSomething() + " then " + doSomethingElse() + " and " + doSomethingDifferent();
+  }
 
-    private String doSomething() {
-        return "Do something";
-    }
+  private String doSomething() {
+    return "Do something";
+  }
 
-    private String doSomethingElse() {
-        return "Do something else";
-    }
+  private String doSomethingElse() {
+    return "Do something else";
+  }
 
-    private String doSomethingDifferent() {
-        return "Do something different";
-    }
+  private String doSomethingDifferent() {
+    return "Do something different";
+  }
 }

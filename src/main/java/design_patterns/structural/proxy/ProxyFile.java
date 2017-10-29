@@ -1,20 +1,22 @@
 package design_patterns.structural.proxy;
 
 class ProxyProtectedFile extends File {
-    private File file = null;
 
-    public ProxyProtectedFile () {
-        this.file = new PublicFile();
-    }
+  private File file = null;
 
-    public String read() {
-        if (isProtected)
-            return "File is protected";
-        else
-            return this.file.read();
-    }
+  public ProxyProtectedFile() {
+    this.file = new PublicFile();
+  }
 
-    public void setProtection(boolean isProtected) {
-        this.isProtected = isProtected;
+  public String read() {
+    if (isProtected) {
+      return "File is protected";
+    } else {
+      return this.file.read();
     }
+  }
+
+  public void setProtection(boolean isProtected) {
+    this.isProtected = isProtected;
+  }
 }

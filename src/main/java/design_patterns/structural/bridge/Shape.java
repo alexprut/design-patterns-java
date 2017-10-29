@@ -1,11 +1,12 @@
 package design_patterns.structural.bridge;
 
 abstract class Shape {
-    protected DrawProgram drawProgram;
 
-    public Shape(DrawProgram drawProgram) {
-        this.drawProgram = drawProgram;
-    }
+  protected DrawProgram drawProgram;
 
-    public abstract String draw();
+  public Shape(DrawProgram drawProgram) {
+    this.drawProgram = drawProgram;
+  }
+
+  public abstract String draw();
 }

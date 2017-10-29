@@ -1,17 +1,18 @@
 package design_patterns.structural.decorator;
 
 abstract class CoffeeDecorator extends Coffee {
-    private final Coffee decorator;
 
-    public CoffeeDecorator(Coffee decorator) {
-        this.decorator = decorator;
-    }
+  private final Coffee decorator;
 
-    public double getCost() {
-        return decorator.getCost();
-    }
+  public CoffeeDecorator(Coffee decorator) {
+    this.decorator = decorator;
+  }
 
-    public String getIngredients() {
-        return decorator.getIngredients();
-    }
+  public double getCost() {
+    return decorator.getCost();
+  }
+
+  public String getIngredients() {
+    return decorator.getIngredients();
+  }
 }

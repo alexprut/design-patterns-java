@@ -1,18 +1,19 @@
 package design_patterns.behavioral.observer;
 
 class ConcreteSubject extends Subject {
-    private String state;
 
-    public void setState(String s) {
-        state = s;
-        notifyObservers();
-    }
+  private String state;
 
-    public String getState() {
-        return state;
-    }
+  public void setState(String s) {
+    state = s;
+    notifyObservers();
+  }
 
-    public String toString() {
-        return state;
-    }
+  public String getState() {
+    return state;
+  }
+
+  public String toString() {
+    return state;
+  }
 }

@@ -4,25 +4,26 @@ import java.util.ArrayList;
 import java.util.ListIterator;
 
 class Composite extends Figure {
-    private ArrayList<Figure> figures = new ArrayList<Figure>();
 
-    public String draw() {
-        String s = "";
+  private ArrayList<Figure> figures = new ArrayList<Figure>();
 
-        ListIterator<Figure> iterator = figures.listIterator();
+  public String draw() {
+    String s = "";
 
-        while (iterator.hasNext()) {
-            s = s + " " + iterator.next().draw();
-        }
+    ListIterator<Figure> iterator = figures.listIterator();
 
-        return s;
+    while (iterator.hasNext()) {
+      s = s + " " + iterator.next().draw();
     }
 
-    public void remove(Figure figure) {
-        figures.remove(figure);
-    }
+    return s;
+  }
 
-    public void add(Figure figure) {
-        figures.add(figure);
-    }
+  public void remove(Figure figure) {
+    figures.remove(figure);
+  }
+
+  public void add(Figure figure) {
+    figures.add(figure);
+  }
 }

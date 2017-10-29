@@ -1,13 +1,14 @@
 package design_patterns.structural.flyweight;
 
 class CoffeeFlavour {
-    private final String flavourName;
 
-    public CoffeeFlavour(String flavourName) {
-        this.flavourName = flavourName;
-    }
+  private final String flavourName;
 
-    public String getFlavourName() {
-        return this.flavourName;
-    }
+  public CoffeeFlavour(String flavourName) {
+    this.flavourName = flavourName;
+  }
+
+  public String getFlavourName() {
+    return this.flavourName;
+  }
 }

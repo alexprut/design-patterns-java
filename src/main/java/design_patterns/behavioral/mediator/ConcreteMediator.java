@@ -1,22 +1,23 @@
 package design_patterns.behavioral.mediator;
 
 class ConcreteMediator implements Mediator {
-    FirstPartner first;
-    SecondPartner second;
 
-    public void registerFirstPartner(FirstPartner partner) {
-        first = partner;
-    }
+  FirstPartner first;
+  SecondPartner second;
 
-    public void registerSecondPartner(SecondPartner partner) {
-        second = partner;
-    }
+  public void registerFirstPartner(FirstPartner partner) {
+    first = partner;
+  }
 
-    public String executeFirstPartner() {
-        return first.execute();
-    }
+  public void registerSecondPartner(SecondPartner partner) {
+    second = partner;
+  }
 
-    public String executeSecondPartner() {
-        return second.execute();
-    }
+  public String executeFirstPartner() {
+    return first.execute();
+  }
+
+  public String executeSecondPartner() {
+    return second.execute();
+  }
 }
