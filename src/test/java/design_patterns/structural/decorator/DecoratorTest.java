@@ -9,7 +9,7 @@ public class DecoratorTest {
     Coffee c = new SimpleCoffee();
     Coffee custom = new Sugar(new Milk(c));
 
-    System.out.println(custom.getIngredients());
-    System.out.println(custom.getCost());
+    Assert.assertEquals(custom.getIngredients(), "SimpleCoffee, Milk, Sugar");
+    Assert.assertEquals(custom.getCost(), 1.5, 0);
   }
 }
