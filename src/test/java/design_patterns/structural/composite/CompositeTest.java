@@ -1,24 +1,36 @@
 package design_patterns.structural.composite;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 import org.junit.*;
 import java.lang.System;
 
 public class CompositeTest {
 
   @Test
-  public void mainTest() {
-    Figure point = new Point();
-    Figure line = new Line();
-    Figure composite = new Composite();
+  public void doesDraw() {
+    Figure c = new Composite();
+    c.add(new Point());
+    c.add(new Line());
 
-    // Make a composite with a Point + Line
-    composite.add(point);
-    composite.add(line);
+    Assert.assertEquals(c.draw(), "Draw: Point Draw: Line ");
+  }
 
-    System.out.println(composite.draw());
+  @Test
+  public void doesAddFigure() {
+    Figure c = new Composite();
+    Assert.assertEquals(c.draw(), "");
 
-    composite.remove(point);
+    c.add(new Point());
+    Assert.assertEquals(c.draw(), "Draw: Point ");
+  }
 
-    System.out.println(composite.draw());
+  @Test
+  public void doesRemoveFigure() {
+    Figure c = new Composite();
+    Figure p = new Point();
+    c.add(p);
+    c.remove(p);
+
+    Assert.assertEquals(c.draw(), "");
   }
 }

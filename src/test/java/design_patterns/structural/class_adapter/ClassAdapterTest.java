@@ -12,6 +12,6 @@ public class ClassAdapterTest {
     figures[1] = new AdapterRectangle();
 
     Assert.assertEquals(figures[0].draw(), "Draw: Line");
-    Assert.assertEquals(figures[1].draw(), "DrawRectangle: Rectangle");
+    Assert.assertEquals(figures[1].draw(), "Draw: Rectangle");
   }
 }

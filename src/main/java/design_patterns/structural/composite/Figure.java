@@ -2,9 +2,7 @@ package design_patterns.structural.composite;
 
 abstract class Figure {
 
-  public String draw() {
-    return "";
-  }
+  public abstract String draw();
 
   public void add(Figure figure) {
   }

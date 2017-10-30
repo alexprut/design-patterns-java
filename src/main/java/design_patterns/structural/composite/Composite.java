@@ -1,7 +1,6 @@
 package design_patterns.structural.composite;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 class Composite extends Figure {
 
@@ -10,10 +9,8 @@ class Composite extends Figure {
   public String draw() {
     String s = "";
 
-    ListIterator<Figure> iterator = figures.listIterator();
-
-    while (iterator.hasNext()) {
-      s = s + " " + iterator.next().draw();
+    for (Figure f : figures) {
+      s += f.draw() + " ";
     }
 
     return s;
