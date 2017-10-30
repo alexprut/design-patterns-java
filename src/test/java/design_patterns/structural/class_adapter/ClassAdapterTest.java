@@ -6,14 +6,12 @@ public class ClassAdapterTest {
 
   @Test
   public void mainTest() {
-    Figure[] figures;
+    Figure[] figures = new Figure[2];
 
-    figures = new Figure[2];
     figures[0] = new Line();
     figures[1] = new AdapterRectangle();
 
-    for (Figure figure : figures) {
-      figure.draw();
-    }
+    Assert.assertEquals(figures[0].draw(), "Draw: Line");
+    Assert.assertEquals(figures[1].draw(), "DrawRectangle: Rectangle");
   }
 }
