@@ -11,8 +11,7 @@ public class ProxyTest {
         new PublicFile()
     };
 
-    for (File file : files) {
-      System.out.println(file.read());
-    }
+    Assert.assertEquals(files[0].read(), "Read: File is Protected");
+    Assert.assertEquals(files[1].read(), "Read: File");
   }
 }
