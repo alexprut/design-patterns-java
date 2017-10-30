@@ -2,7 +2,7 @@ package design_patterns.structural.flyweight;
 
 import org.junit.*;
 
-public class FlyweightTest {
+public class CoffeeShopTest {
 
   @Test
   public void mainTest() {
@@ -10,6 +10,9 @@ public class FlyweightTest {
     shop.getOrder(1, "espresso");
     shop.getOrder(7, "macchiato");
 
-    System.out.println(shop.toString());
+    Assert.assertEquals(
+        shop.toString(),
+        "Order at table: 1, coffee flavour: espresso\nOrder at table: 7, coffee flavour: macchiato\n"
+    );
   }
 }

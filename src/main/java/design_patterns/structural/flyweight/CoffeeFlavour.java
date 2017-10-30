@@ -2,13 +2,13 @@ package design_patterns.structural.flyweight;
 
 class CoffeeFlavour {
 
-  private final String flavourName;
+  private final String FLAVOUR;
 
   public CoffeeFlavour(String flavourName) {
-    this.flavourName = flavourName;
+    FLAVOUR = flavourName;
   }
 
   public String getFlavourName() {
-    return this.flavourName;
+    return FLAVOUR;
   }
 }
