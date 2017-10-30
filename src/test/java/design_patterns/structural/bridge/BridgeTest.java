@@ -6,15 +6,18 @@ public class BridgeTest {
 
   @Test
   public void mainTest() {
+    DrawProgram dp1 = new DrawProgram1();
+    DrawProgram dp2 = new DrawProgram2();
     Shape[] shapes = new Shape[]{
-        new Circle(new DrawProgram1()),
-        new Circle(new DrawProgram2()),
-        new Line(new DrawProgram1()),
-        new Line(new DrawProgram2())
+        new Circle(dp1),
+        new Circle(dp2),
+        new Line(dp1),
+        new Line(dp2)
     };
 
-    for (Shape shape : shapes) {
-      System.out.println(shape.draw());
-    }
+    Assert.assertEquals(shapes[0].draw(), "DrawProgram1: Circle");
+    Assert.assertEquals(shapes[1].draw(), "DrawProgram2: Circle");
+    Assert.assertEquals(shapes[2].draw(), "DrawProgram1: Line");
+    Assert.assertEquals(shapes[3].draw(), "DrawProgram2: Line");
   }
 }
