@@ -2,7 +2,7 @@ package design_patterns.structural.facade;
 
 class Sugar {
 
-  protected String addSugar() {
+  public String addSugar() {
     return "Sugar";
   }
 }

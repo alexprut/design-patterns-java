@@ -1,7 +1,6 @@
 package design_patterns.structural.facade;
 
 import org.junit.*;
-import java.lang.System;
 
 public class FacadeTest {
 
@@ -9,6 +8,6 @@ public class FacadeTest {
   public void mainTest() {
     Facade f = new Facade();
 
-    System.out.println(f.makeCoffee());
+    Assert.assertEquals(f.makeCoffee(), "Coffee = Water + Caffeine + Sugar");
   }
 }

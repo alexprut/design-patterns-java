@@ -2,7 +2,7 @@ package design_patterns.structural.facade;
 
 class Water {
 
-  protected String addWater() {
+  public String addWater() {
     return "Water";
   }
 }

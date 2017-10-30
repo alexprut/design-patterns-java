@@ -2,7 +2,7 @@ package design_patterns.structural.facade;
 
 class Facade {
 
-  protected String makeCoffee() {
+  public String makeCoffee() {
     Sugar s = new Sugar();
     Caffeine c = new Caffeine();
     Water w = new Water();

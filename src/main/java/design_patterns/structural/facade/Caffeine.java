@@ -2,7 +2,7 @@ package design_patterns.structural.facade;
 
 class Caffeine {
 
-  protected String addCaffeine() {
+  public String addCaffeine() {
     return "Caffeine";
   }
 }
