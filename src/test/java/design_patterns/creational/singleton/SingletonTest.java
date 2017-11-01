@@ -5,9 +5,10 @@ import org.junit.*;
 public class SingletonTest {
 
   @Test
-  public void mainTest() {
+  public void isSameInstance() {
     Singleton s = Singleton.getInstance();
 
-    System.out.println(s.doSomething());
+    Assert.assertEquals(s, Singleton.getInstance());
+    Assert.assertEquals(s.doSomething(), "I do something");
   }
 }
