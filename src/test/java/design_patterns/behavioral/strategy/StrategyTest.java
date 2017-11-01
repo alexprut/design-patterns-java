@@ -5,11 +5,17 @@ import org.junit.*;
 public class StrategyTest {
 
   @Test
-  public void mainTest() {
-    Concrete firstAlg = new Concrete(new FirstStrategy());
-    Concrete secondAlg = new Concrete(new SecondStrategy());
+  public void designPatternTest() {
+    Strategy s1 = new FirstStrategy();
+    Strategy s2 = new SecondStrategy();
+    Concrete concrete = new Concrete(s1);
 
-    System.out.println(firstAlg.algorithm());
-    System.out.println(secondAlg.algorithm());
+    Assert.assertEquals(concrete.algorithm(), "Do something then Do something else");
+
+    concrete.setStrategy(s2);
+    Assert.assertEquals(
+        concrete.algorithm(),
+        "Do something then Do something else and Do something different"
+    );
   }
 }
