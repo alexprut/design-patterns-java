@@ -5,7 +5,7 @@ import org.junit.*;
 public class CoffeeShopTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     CoffeeShop shop = new CoffeeShop();
     shop.getOrder(1, "espresso");
     shop.getOrder(7, "macchiato");

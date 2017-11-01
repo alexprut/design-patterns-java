@@ -5,7 +5,7 @@ import org.junit.*;
 public class DecoratorTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     Coffee c = new SimpleCoffee();
     Coffee custom = new Sugar(new Milk(c));
 

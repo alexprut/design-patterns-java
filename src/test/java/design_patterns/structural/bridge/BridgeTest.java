@@ -5,7 +5,7 @@ import org.junit.*;
 public class BridgeTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     DrawProgram dp1 = new DrawProgram1();
     DrawProgram dp2 = new DrawProgram2();
     Shape[] shapes = new Shape[]{

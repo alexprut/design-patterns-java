@@ -5,7 +5,7 @@ import org.junit.*;
 public class FacadeTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     Facade f = new Facade();
 
     Assert.assertEquals(f.makeCoffee(), "Coffee = Water + Caffeine + Sugar");

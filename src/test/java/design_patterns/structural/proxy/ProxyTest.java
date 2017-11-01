@@ -5,7 +5,7 @@ import org.junit.*;
 public class ProxyTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     File[] files = new File[]{
         new ProxyProtectedFile(),
         new PublicFile()
