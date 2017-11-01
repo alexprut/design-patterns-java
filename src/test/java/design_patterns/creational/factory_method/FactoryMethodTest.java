@@ -5,13 +5,13 @@ import org.junit.*;
 public class FactoryMethodTest {
 
   @Test
-  public void mainTest() {
-    FactoryMethodTest.display(new SpecialCreator());
-  }
+  public void designPatterTest() {
+    Creator specialCreator = new SpecialCreator();
+    Creator limitedCreator = new LimitedCreator();
+    Product specialProduct = specialCreator.factoryMethod();
+    Product limitedProduct = limitedCreator.factoryMethod();
 
-  public static void display(Creator c) {
-    Product p = c.factoryMethod();
-
-    System.out.println(p.getType());
+    Assert.assertEquals(specialProduct.getType(), "SpecialProduct");
+    Assert.assertEquals(limitedProduct.getType(), "LimitedProduct");
   }
 }
