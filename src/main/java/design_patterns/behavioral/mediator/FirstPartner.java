@@ -10,4 +10,8 @@ class FirstPartner extends Partner {
   public String execute() {
     return "First Partner";
   }
+
+  public String executePartner() {
+    return mediator.executeSecondPartner();
+  }
 }

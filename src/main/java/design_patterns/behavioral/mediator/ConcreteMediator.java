@@ -2,8 +2,8 @@ package design_patterns.behavioral.mediator;
 
 class ConcreteMediator implements Mediator {
 
-  FirstPartner first;
-  SecondPartner second;
+  private FirstPartner first;
+  private SecondPartner second;
 
   public void registerFirstPartner(FirstPartner partner) {
     first = partner;
@@ -19,5 +19,13 @@ class ConcreteMediator implements Mediator {
 
   public String executeSecondPartner() {
     return second.execute();
+  }
+
+  public FirstPartner getFirstPartner() {
+    return first;
+  }
+
+  public SecondPartner getSecondPartner() {
+    return second;
   }
 }
