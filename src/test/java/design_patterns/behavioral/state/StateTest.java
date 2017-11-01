@@ -5,13 +5,12 @@ import org.junit.*;
 public class StateTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     Context c = new Context(new OpenState());
 
-    c.request();
-    System.out.println(c.toString());
+    Assert.assertEquals(c.toString(), "Context with: Open State");
 
     c.request();
-    System.out.println(c.toString());
+    Assert.assertEquals(c.toString(), "Context with: Close State");
   }
 }
