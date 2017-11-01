@@ -3,7 +3,7 @@ package design_patterns.behavioral.visitor;
 abstract class Visitor {
 
   public String visit(Figure figure) {
-    return figure.name;
+    return figure.getName();
   }
 
   abstract String visit(Square figure);
