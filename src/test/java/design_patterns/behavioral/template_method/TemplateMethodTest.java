@@ -5,9 +5,9 @@ import org.junit.*;
 public class TemplateMethodTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     AbstractClass c = new ConcreteClass();
 
-    System.out.print(c.templateMethod());
+    Assert.assertEquals(c.templateMethod(), "I do something then I do something else");
   }
 }
