@@ -1,17 +1,14 @@
 package design_patterns.behavioral.observer;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 abstract class Subject {
 
-  ArrayList<Observer> observers = new ArrayList<Observer>();
+  protected ArrayList<Observer> observers = new ArrayList<Observer>();
 
   public void notifyObservers() {
-    Iterator<Observer> iteratorObservers = observers.iterator();
-
-    while (iteratorObservers.hasNext()) {
-      iteratorObservers.next().update();
+    for (Observer observer : observers) {
+      observer.update();
     }
   }
 

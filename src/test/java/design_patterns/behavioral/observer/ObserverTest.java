@@ -5,17 +5,16 @@ import org.junit.*;
 public class ObserverTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     Subject observed = new ConcreteSubject();
     Observer observer = new ConcreteObserver(observed);
 
-    System.out.println(observed.getState());
-    System.out.println(observer.toString());
+    Assert.assertNull(observed.getState());
+    Assert.assertNull(observer.toString());
 
-    System.out.println("Update subject state:");
-    observed.setState("itIsANewState");
+    observed.setState("something");
 
-    System.out.println(observed.getState());
-    System.out.println(observer.toString());
+    Assert.assertEquals(observed.getState(), "something");
+    Assert.assertEquals(observer.toString(), "something");
   }
 }
