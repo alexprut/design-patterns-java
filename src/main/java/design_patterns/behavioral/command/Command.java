@@ -2,9 +2,9 @@ package design_patterns.behavioral.command;
 
 abstract class Command {
 
-  Receive r;
+  protected Receiver r;
 
-  public Command(Receive r) {
+  public Command(Receiver r) {
     this.r = r;
   }
 

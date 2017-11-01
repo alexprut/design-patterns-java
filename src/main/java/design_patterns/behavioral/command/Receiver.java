@@ -1,6 +1,6 @@
 package design_patterns.behavioral.command;
 
-class Receive {
+class Receiver {
 
   public void turnOn() {
   }

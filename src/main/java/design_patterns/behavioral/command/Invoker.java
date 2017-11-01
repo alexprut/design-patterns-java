@@ -1,11 +1,10 @@
 package design_patterns.behavioral.command;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 class Invoker {
 
-  ArrayList<Command> commands = new ArrayList<Command>();
+  private ArrayList<Command> commands = new ArrayList<Command>();
 
   public void setCommandAndExecute(Command c) {
     commands.add(c);
@@ -14,10 +13,9 @@ class Invoker {
 
   public String toString() {
     String output = "History:";
-    Iterator<Command> commandIterator = commands.iterator();
 
-    while (commandIterator.hasNext()) {
-      output += "\n" + commandIterator.next().toString();
+    for (Command command : commands) {
+      output += "\n" + command.toString();
     }
 
     return output;

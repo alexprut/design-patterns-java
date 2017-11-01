@@ -2,7 +2,7 @@ package design_patterns.behavioral.command;
 
 class TurnOnCommand extends Command {
 
-  public TurnOnCommand(Receive r) {
+  public TurnOnCommand(Receiver r) {
     super(r);
   }
 

@@ -5,8 +5,8 @@ import org.junit.*;
 public class CommandTest {
 
   @Test
-  public void mainTest() {
-    Receive r = new Receive();
+  public void designPatternTest() {
+    Receiver r = new Receiver();
     Command c1 = new TurnOnCommand(r);
     Command c2 = new TurnOffCommand(r);
     Invoker i = new Invoker();
@@ -14,7 +14,11 @@ public class CommandTest {
     i.setCommandAndExecute(c1);
     i.setCommandAndExecute(c2);
     i.setCommandAndExecute(c1);
+    i.setCommandAndExecute(c2);
 
-    System.out.println(i.toString());
+    Assert.assertEquals(
+        i.toString(),
+        "History:\nTurn on Command\nTurn off Command\nTurn on Command\nTurn off Command"
+    );
   }
 }
