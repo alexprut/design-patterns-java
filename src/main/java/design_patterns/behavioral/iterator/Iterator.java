@@ -11,6 +11,4 @@ abstract class Iterator {
   abstract String last();
 
   abstract String next();
-
-  abstract String previous();
 }

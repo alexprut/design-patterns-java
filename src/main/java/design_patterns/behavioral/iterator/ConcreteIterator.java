@@ -2,8 +2,8 @@ package design_patterns.behavioral.iterator;
 
 class ConcreteIterator extends Iterator {
 
-  public String word;
-  public int count = 0;
+  private String word;
+  private int count = 0;
 
   public ConcreteIterator(String word) {
     this.word = word;
@@ -14,11 +14,7 @@ class ConcreteIterator extends Iterator {
   }
 
   public boolean hasNext() {
-    if ((count + 1) <= word.length()) {
-      return true;
-    }
-
-    return false;
+    return (count + 1 < word.length());
   }
 
   public String first() {
@@ -30,14 +26,8 @@ class ConcreteIterator extends Iterator {
   }
 
   public String next() {
-    String next = String.valueOf(word.charAt(count));
     count++;
 
-    return next;
-  }
-
-  public String previous() {
-    count--;
-    return String.valueOf(word.charAt(count));
+    return current();
   }
 }
