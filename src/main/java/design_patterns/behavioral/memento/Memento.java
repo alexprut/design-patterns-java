@@ -2,13 +2,13 @@ package design_patterns.behavioral.memento;
 
 class Memento {
 
-  public final String state;
+  private final String STATE;
 
   public Memento(String state) {
-    this.state = state;
+    STATE = state;
   }
 
   public String getSavedState() {
-    return this.state;
+    return STATE;
   }
 }

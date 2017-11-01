@@ -6,18 +6,18 @@ import org.junit.*;
 public class MementoTest {
 
   @Test
-  public void mainTest() {
+  public void designPatternTest() {
     ArrayList<Memento> savedStates = new ArrayList<Memento>();
     Originator origin = new Originator();
 
-    origin.setState("First");
-    System.out.println(origin.toString());
-    origin.setState("Second");
-    System.out.println(origin.toString());
+    origin.setState("first");
+    Assert.assertEquals(origin.toString(), "first");
+
     savedStates.add(origin.saveToMemento());
-    origin.setState("First");
-    System.out.println(origin.toString());
+    origin.setState("second");
+    Assert.assertEquals(origin.toString(), "second");
+
     origin.restoreFromMemento(savedStates.get(0));
-    System.out.println(origin.toString());
+    Assert.assertEquals(origin.toString(), "first");
   }
 }

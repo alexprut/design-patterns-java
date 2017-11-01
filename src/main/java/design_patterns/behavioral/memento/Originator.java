@@ -2,7 +2,7 @@ package design_patterns.behavioral.memento;
 
 class Originator {
 
-  public String state;
+  private String state;
 
   public void setState(String state) {
     this.state = state;
@@ -13,7 +13,7 @@ class Originator {
   }
 
   public void restoreFromMemento(Memento memento) {
-    this.state = memento.getSavedState();
+    state = memento.getSavedState();
   }
 
   public String toString() {
