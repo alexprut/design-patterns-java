@@ -2,7 +2,7 @@ package design_patterns.creational.builder;
 
 import java.util.ArrayList;
 
-public class PizzaBuilder {
+abstract public class PizzaBuilder {
 
   protected ArrayList<String> ingredients;
   protected String name;

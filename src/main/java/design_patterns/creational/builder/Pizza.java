@@ -9,14 +9,17 @@ public class Pizza {
   private String name;
   private int price;
 
+  public Pizza() {
+  }
+
   public Pizza(String name) {
-    this.name = name;
+    setName(name);
   }
 
   public Pizza(PizzaBuilder builder) {
-    this.ingredients = builder.getIngredients();
-    this.name = builder.getName();
-    this.price = builder.getPrice();
+    setIngredients(builder.getIngredients());
+    setName(builder.getName());
+    setPrice(builder.getPrice());
   }
 
   public void setIngredients(ArrayList<String> ingredients) {
@@ -34,10 +37,8 @@ public class Pizza {
   public String toString() {
     String string = "Ingredients";
 
-    ListIterator<String> iterator = this.ingredients.listIterator();
-
-    while (iterator.hasNext()) {
-      string += " " + iterator.next();
+    for (String ingredient : ingredients) {
+      string += " " + ingredient;
     }
 
     return string + "; Price: " + this.price + "; Name: " + this.name;
