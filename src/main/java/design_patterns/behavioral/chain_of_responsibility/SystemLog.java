@@ -6,7 +6,7 @@ public class SystemLog extends Chain {
     super.priority = Chain.ERR_SYSTEM;
   }
 
-  public void writeMessage() {
-    System.out.println("System error logged");
+  public String writeMessage() {
+    return "System error logged";
   }
 }

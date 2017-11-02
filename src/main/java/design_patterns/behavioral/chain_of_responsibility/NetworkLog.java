@@ -6,7 +6,7 @@ public class NetworkLog extends Chain {
     super.priority = Chain.ERR_NETWORK;
   }
 
-  public void writeMessage() {
-    System.out.println("Network error logged");
+  public String writeMessage() {
+    return "Network error logged";
   }
 }
