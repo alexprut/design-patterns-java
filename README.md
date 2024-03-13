@@ -4,7 +4,7 @@
 
 [![Google Java Style](https://img.shields.io/badge/style%20guide-google-yellow.svg)](https://github.com/google/google-java-format)
 [![MIT](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/alexprut/design-patterns-java/blob/master/LICENSE)
-[![Build Status](http://img.shields.io/travis/alexprut/design-patterns-java/master.svg)](https://travis-ci.org/alexprut/design-patterns-java)
+![Build Status](https://github.com/alexprut/design-patterns-java/actions/workflows/build.yml/badge.svg)
 <p>Classic OOP Design Patterns from <a href="https://en.wikipedia.org/?title=Design_Patterns">GoF</a>, implemented in Java.</p>
 </div>
 <br />
