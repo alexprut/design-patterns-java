@@ -1,9 +1,0 @@
-language: java
-jdk:
-- oraclejdk8
-
-install:
-- mvn install
-
-after_success:
-- mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
