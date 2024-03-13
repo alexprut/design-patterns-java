@@ -5,7 +5,6 @@
 [![Google Java Style](https://img.shields.io/badge/style%20guide-google-yellow.svg)](https://github.com/google/google-java-format)
 [![MIT](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/alexprut/design-patterns-java/blob/master/LICENSE)
 [![Build Status](http://img.shields.io/travis/alexprut/design-patterns-java/master.svg)](https://travis-ci.org/alexprut/design-patterns-java)
-[![Coverage Status](http://img.shields.io/coveralls/alexprut/design-patterns-java/master.svg)](https://coveralls.io/r/alexprut/design-patterns-java?branch=master)
 <p>Classic OOP Design Patterns from <a href="https://en.wikipedia.org/?title=Design_Patterns">GoF</a>, implemented in Java.</p>
 </div>
 <br />
@@ -85,6 +84,16 @@ Design Patterns Implemented
 * [UML](https://github.com/alexprut/design-patterns-java/tree/master/src/main/resources/img/uml-chain-of-responsability.png) –
 [Chain of Responsability](https://github.com/alexprut/design-patterns-java/tree/master/src/main/java/design_patterns/behavioral/chain_of_responsibility)
 — _delegates commands to a chain of processing objects_
+
+### Build
+```
+./gradlew clean build
+```
+
+### Test
+```
+./gradlew test
+```
 
 License
 =======

@@ -1,8 +1,6 @@
 package design_patterns.structural.composite;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 import org.junit.*;
-import java.lang.System;
 
 public class CompositeTest {
 
